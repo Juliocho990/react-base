@@ -1,0 +1,114 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:testing-library/react",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "testing-library",
+    "prettier",
+    "@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "react/react-in-jsx-scope": [
+      "off"
+    ],
+    "react/jsx-uses-react": [
+      "off"
+    ],
+    "react/no-unescaped-entities": [
+      "off"
+    ],
+    "indent": "off",
+    "react/jsx-indent": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-indent-props": "off",
+    "quotes": "off",
+    "@typescript-eslint/quotes": "off",
+    "jsx-quotes": [
+      "off"
+    ],
+    "no-return-assign": "off",
+    "react/require-default-props": "off",
+    "react/prop-types": "off",
+    "react/forbid-prop-types": "off",
+    "no-undef-init": "off",
+    "react/function-component-definition": 0,
+    "import/prefer-default-export": 0,
+    "no-param-reassign": [
+      2,
+      {
+        "props": false
+      }
+    ],
+    "react/jsx-no-constructed-context-values": 0,
+    "@typescript-eslint/default-param-last": 0,
+    "react/jsx-no-useless-fragment": 0,
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          [
+            "builtin",
+            "external"
+          ],
+          "internal",
+          [
+            "sibling",
+            "parent"
+          ],
+          "index"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "@",
+            "group": "builtin",
+            "position": "before"
+          },
+          {
+            "pattern": "interfaces/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "components/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "utils/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "contexts/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "services/**",
+            "group": "internal"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": [
+          "internal",
+          "builtin"
+        ],
+        "newlines-between": "always"
+      }
+    ]
+  }
+}
