@@ -1,5 +1,4 @@
-/* eslint-disable max-nested-callbacks */
-import { renderHook } from '@testing-library/react-hooks'
+import { renderHook } from '@testing-library/react'
 
 import contextFactory from '.'
 

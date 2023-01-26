@@ -8,7 +8,6 @@ export default <State, Action extends ActionWithType>(
   initialState: State
 ) => {
   const StateContext = createContext<State>({ ...initialState })
-  // eslint-disable-next-line @typescript-eslint/no-empty-function, no-empty-function
   const DispatchContext = createContext<Dispatch<Action>>(
     (() => {}) as Dispatch<Action>
   )
@@ -30,7 +29,6 @@ export default <State, Action extends ActionWithType>(
     initialState
   })
 
-  // eslint-disable-next-line @typescript-eslint/naming-convention
   return {
     withContextProvider,
     useSelector,

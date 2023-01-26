@@ -1,22 +1,17 @@
-import {
-  BrowserRouter as Router,
-  Routes as RoutesSwitch,
-  Route,
-  Navigate
-} from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 
 import { useSelector } from 'contexts/UserContext'
 
 import { ROUTES } from './constants'
 import styles from './styles.module.scss'
 
-function Routes() {
+function Router() {
   const user = useSelector((state) => state.user)
 
   return (
-    <Router>
+    <BrowserRouter>
       <div className={styles.container}>
-        <RoutesSwitch>
+        <Routes>
           {ROUTES.map(({ redirectTo, path, element, ...config }) => (
             <Route
               key={path}
@@ -31,10 +26,10 @@ function Routes() {
               {...config}
             />
           ))}
-        </RoutesSwitch>
+        </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   )
 }
 
-export default Routes
+export default Router

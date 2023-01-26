@@ -3,7 +3,6 @@ import { Context, Dispatch, Reducer, ComponentType, useReducer } from 'react'
 import { ActionWithType } from './interfaces'
 
 // {} is valid as props
-// eslint-disable-next-line @typescript-eslint/ban-types
 interface Props<State, Action> {
   stateContext: Context<State>
   dispatchContext: Context<Dispatch<Action>>
@@ -12,7 +11,6 @@ interface Props<State, Action> {
 }
 
 // {} is valid as props
-// eslint-disable-next-line @typescript-eslint/ban-types
 const withProvider =
   <ComponentProps extends {}, State, Action extends ActionWithType>({
     stateContext: StateContext,

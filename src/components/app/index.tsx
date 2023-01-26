@@ -1,8 +1,8 @@
 import { withContextProvider } from 'contexts/UserContext'
-import Routes from 'components/Routes'
+import Router from 'components/router'
 
 function App() {
-  return <Routes />
+  return <Router />
 }
 
 export default withContextProvider(App)

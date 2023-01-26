@@ -76,7 +76,8 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
       "!src/*.*",
-      "!src/config/*.*"
+      "!src/config/*.*",
+      "!**/i18n.{js,ts}"
     ],
     "coverageThreshold": {
       "global": {

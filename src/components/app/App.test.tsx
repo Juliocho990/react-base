@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react'
 import App from '.'
 
 jest.mock(
-  'components/Routes',
+  'components/router',
   () =>
     function Routes() {
       return <span>Routes</span>
