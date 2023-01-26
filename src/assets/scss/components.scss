@@ -1,0 +1,89 @@
+@use './variables/_colors';
+
+.unlabeled-field {
+  margin-top: 30px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.quarter-width {
+  width: 25%;
+}
+
+.three-quarter-width {
+  width: 75%;
+}
+
+.text-error {
+  color: $seance;
+}
+
+.input-error {
+  border: 1px solid $seance;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.subparagraph {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.legacy {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
+.logo-xs {
+  height: 32px;
+  width: 32px;
+}
+
+.logo-s {
+  height: 50px;
+  width: 50px;
+}
+
+.logo-m {
+  height: 60px;
+  width: 60px;
+}
+
+.logo-l {
+  height: 90px;
+  width: 90px;
+}
+
+.logo-xl {
+  height: 131px;
+  width: 131px;
+}
+
+.arrow-down {
+  transform: rotate(180deg);
+}
